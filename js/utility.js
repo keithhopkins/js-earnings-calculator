@@ -15,7 +15,6 @@ function Bill(array) {
   this.mealPrice = Number(array[0]);
   this.taxRate = Number(array[1]);
   this.tipRate = Number(array[2]);
-  // body...
 }
 
 Bill.prototype.subTotal = function(){
@@ -28,5 +27,8 @@ Bill.prototype.tip = function(){
 
 Bill.prototype.total = function (){
   return this.subTotal() + this.tip();
-  // body...
 };
+
+function tipAverage(tipCount, tipTotal){
+  return tipTotal / tipCount;
+}
