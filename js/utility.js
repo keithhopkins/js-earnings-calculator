@@ -1,15 +1,3 @@
-// function subTotal(mealPrice, taxRate) {
-//   return mealPrice + mealPrice * taxRate / 100
-//   // body...
-// }
-//
-// function tipCalc(total, tipRate) {
-//   return total * tipRate / 100
-// }
-//
-// function total(total, tip) {
-//   return total + tip
-// }
 
 function Bill(array) {
   this.mealPrice = Number(array[0]);
@@ -29,6 +17,5 @@ Bill.prototype.total = function (){
   return this.subTotal() + this.tip();
 };
 
-function tipAverage(tipCount, tipTotal){
-  return tipTotal / tipCount;
-}
+
+module.exports = Bill;
